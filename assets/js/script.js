@@ -1,6 +1,9 @@
-// habilitar bootstrap
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+$(document).ready(function () {
+  // tooltip de bootstrap
+  $('[data-bs-toggle="tooltip"]').tooltip()
+})
+
 
 // Cambio de diapositiva...
 document.querySelector('#my-carousel').addEventListener('slide.bs.carousel', event => {
